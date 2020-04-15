@@ -33,7 +33,7 @@ $collection->add('category/index',new \mvc\Engine\Router\Route(
         'class' => '\mvc\Controller\Category'
     )
 ));
-
+/*
 $collection->add('article/delete',new \mvc\Engine\Router\Route(
     HTTP_SERVER.'kategorie/usun/<id>?',
     array(
@@ -64,6 +64,7 @@ $collection->add('article/add',new \mvc\Engine\Router\Route(
     )
 ));
 
+
 $collection->add('homepage',new \mvc\Engine\Router\Route(
     HTTP_SERVER.'',
     array(
@@ -78,5 +79,6 @@ $collection->add('homepage',new \mvc\Engine\Router\Route(
         'id' => 0
     )
 ));
+*/
 
 $router = new \mvc\Engine\Router\Router($_SERVER['REQUEST_URI'], $collection);
