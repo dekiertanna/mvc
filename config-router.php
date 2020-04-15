@@ -1,5 +1,5 @@
 <?php
-$collection = new \mvc\Router\RouteCollection();
+$collection = new \mvc\Engine\Router\RouteCollection();
 
 $collection->add('category/delete',new \mvc\Engine\Router\Route(
     HTTP_SERVER.'kategorie/usun/<id>?',
@@ -65,7 +65,7 @@ $collection->add('article/add',new \mvc\Engine\Router\Route(
 ));
 
 $collection->add('homepage',new \mvc\Engine\Router\Route(
-    HTTP_SERVER.'kategorie/usun/<id>?',
+    HTTP_SERVER.'',
     array(
         'file' =>DIR_CONTROLLER.'Article.php',
         'method' => 'index',
@@ -79,4 +79,4 @@ $collection->add('homepage',new \mvc\Engine\Router\Route(
     )
 ));
 
-$router = new \mvc\Engine\Router\Router($_SERVER['REQUEST URI'], $collection);
+$router = new \mvc\Engine\Router\Router($_SERVER['REQUEST_URI'], $collection);

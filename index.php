@@ -1,5 +1,5 @@
 <?php
-require_once 'confog.php';
+require_once 'config.php';
 $loader = include DIR_VENDOR.'autoload.php';
 require_once 'config-router.php';
 $router = new \mvc\Engine\Router\Router('http://'.$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]);
