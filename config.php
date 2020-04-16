@@ -6,4 +6,4 @@ define('DATABASE_PASSWORD','');
 define('DIR_VENDOR','C:/xampp/htdocs/mvc/vendor/');
 define('DIR_TEMPLATE','C:/xampp/htdocs/mvc/src/template/');
 define('DIR_CONTROLLER','C:/xampp/htdocs/mvc/src/Controller/');
-define('HTTP_SERVER','http://localhost/mvc/index.php');
+define('HTTP_SERVER','http://localhost/mvc/');
